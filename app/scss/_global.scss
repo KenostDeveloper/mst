@@ -1998,7 +1998,7 @@ ul{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 3;
+	z-index: 30;
 	width: 100%;
 	height: 100vh;
 	transition: all 0.4s;
@@ -2164,7 +2164,7 @@ ul{
 	}
 
 	&__menu{
-		height: 100vh;
+		height: 100dvh;
 		background: var(--main-background-windows);
 		position: fixed;
 		z-index: 2;
@@ -3443,7 +3443,6 @@ ul{
 	color: var(--text-color-dop) !important;
 	margin-bottom: 20px !important;
 	font-size: 14px;
-	
 }
 
 .breadcrumb a{
@@ -4788,6 +4787,21 @@ ul{
     .d-col-catalog-el{
 		width: calc(25% - 5px);
 	}
+
+	.dart-header{
+		// background: #8FFF00;
+
+		&__logo{
+			background: var(--logo-mobile);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 40px;
+			height: 40px;
+			margin-right: 12px
+		}
+
+	}
 }
 
 @media (max-width: $small-desktop){
@@ -4816,20 +4830,6 @@ ul{
 	.dart-mobile-searsh{
 		display: block;
 	}
-
-	.dart-header{
-		// background: #8FFF00;
-
-		&__logo{
-			background: var(--logo-mobile);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 40px;
-			height: 40px;
-			margin-right: 12px
-		}
-	}
 	
 	.changeshop{
 		&__list{
@@ -4854,7 +4854,6 @@ ul{
 		&__logo{
 			width: 24px;
 			height: 24px;
-		
 		}
 
 		&__basket{
@@ -5104,7 +5103,10 @@ ul{
 		}
 
 		&__button{
-			display: none;
+			bottom: 16px;
+			right: 164px;
+			width: fit-content;
+			position: absolute;
 		}
 
 		&__menu {
@@ -5346,6 +5348,16 @@ ul{
 }
 
 @media (max-width: $phones){
+
+	.changeshop{
+		&__shop{
+			margin: 0;
+		}
+
+		&__settings{
+			margin-bottom: 30px;
+		}
+	}
 
 	.h1-mini{
 		font-size: 18px !important;

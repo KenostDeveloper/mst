@@ -15,6 +15,12 @@
     }
 }
 
+.summary-block{
+    &__title{
+        display: none;
+    }
+}
+
 .header-shop{
     width: 215px;
     height: 48px;
