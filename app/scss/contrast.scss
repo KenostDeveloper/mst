@@ -191,7 +191,23 @@
     display: flex;
     gap: 8px;
     overflow-x: auto;
-    padding-bottom: 4px;
+    padding: 8px;
+
+    &__value{
+        line-height: 1.4;
+        background: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 23px;
+        height: 19px;
+        font-size: 12px;
+        color: #FFF;
+        position: absolute;
+        right: -6px;
+        top: -8px;
+    }
 
     &::-webkit-scrollbar {
         width: 8px;

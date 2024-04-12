@@ -4783,6 +4783,12 @@ ul{
 	}
 }
 
+.nav__all-shop{
+	i{
+		display: none;
+	}
+}
+
 @media (max-width: 1600px){
     .d-col-catalog-el{
 		width: calc(25% - 5px);
@@ -4800,6 +4806,17 @@ ul{
 			height: 40px;
 			margin-right: 12px
 		}
+
+		.nav__all-shop{
+			i{
+				display: block;
+			}
+
+			span{
+				display: none;
+			}
+		}
+		
 
 	}
 }

@@ -23,27 +23,27 @@ $main-padding:          24px;
 
 //Светлая тема
 :root {
-    --primary-color: #F00;
-    --primary-hover: #EC0000;
-    --white-color: #fff;
-    --secondary-color: #282828;
-    --btn-secondary-color: rgba(0, 0, 0, 0.03);
-    --btn-secondary-outline-background: #F8F7F5;
-    --btn-secondary-outline-color: #4D4D4D;
-    --btn-secondary-outline-hover: #E9E9E9;
-    --border-color: #E2E2E2;
-    --main-background: #F5F5F5;
-    --main-background-windows: #fff;
-    --color-prev-hover: #EEE;
-    --link-color-hover: #8B8B8B;
-    --footer-text-color: #B0B0B0;
-    --rating-color: #E6E6E6;
-    --logo-desctop: url('../img/logo_alt.svg');
-    --logo-mobile: url('../img/min-logo.svg');
-    --color-sitebar-text: #595959;
-    --text-color-dop: #ACABAB;
-    --bs-breadcrumb-divider: "-";
-    --bs-body-font-family: "Roboto", sans-serif !important;
+  --primary-color: #F00;
+  --primary-hover: #EC0000;
+  --white-color: #fff;
+  --secondary-color: #282828;
+  --btn-secondary-color: rgba(0, 0, 0, 0.03);
+  --btn-secondary-outline-background: #F8F7F5;
+  --btn-secondary-outline-color: #4D4D4D;
+  --btn-secondary-outline-hover: #E9E9E9;
+  --border-color: #E2E2E2;
+  --main-background: #F5F5F5;
+  --main-background-windows: #fff;
+  --color-prev-hover: #EEE;
+  --link-color-hover: #8B8B8B;
+  --footer-text-color: #B0B0B0;
+  --rating-color: #E6E6E6;
+  --logo-desctop: url('../img/logo_alt.svg');
+  --logo-mobile: url('../img/min-logo.svg');
+  --color-sitebar-text: #595959;
+  --text-color-dop: #ACABAB;
+  --bs-breadcrumb-divider: "-";
+  --bs-body-font-family: "Roboto", sans-serif !important;
 }
 
 //Тёмная тема

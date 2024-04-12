@@ -1898,3 +1898,15 @@ if(toggleAllFilters){
 		})
 	}
 }
+
+
+const allShop = document.querySelector('.all-shop');
+const allShopToggle = document.querySelectorAll('.all-shop__togle');
+
+if(allShop && allShopToggle){
+	for(let i = 0; i < allShopToggle.length; i++){
+		allShopToggle[i].addEventListener('click', () => {
+			allShop.classList.toggle("show")
+		})
+	}
+}
