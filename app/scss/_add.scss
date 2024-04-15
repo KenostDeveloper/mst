@@ -168,9 +168,10 @@
     display: flex;
     gap: 12px;
     margin-top: 20px;
+    flex-wrap: wrap;
 
     &__el{
-        width: 100%;
+        width: calc(50% - 6px);
         display: flex;
         background: var(--btn-secondary-outline-background);
         padding: 24px;
@@ -246,6 +247,10 @@
 @media (max-width: $tablets){
     .delivery-methods{
         flex-direction: column;
+
+        &__el{
+            width: 100%;
+        }
     }
 }
 

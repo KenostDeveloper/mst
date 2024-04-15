@@ -12175,10 +12175,12 @@ ol.def-section li + li {
   display: flex;
   gap: 12px;
   margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .delivery-methods__el {
-  width: 100%;
+  width: calc(50% - 6px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12260,6 +12262,9 @@ ol.def-section li + li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .delivery-methods__el {
+    width: 100%;
   }
 }
 
