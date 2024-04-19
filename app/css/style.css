@@ -4425,6 +4425,7 @@ ul {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .dart-cheackbox + label::before {
@@ -10059,6 +10060,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  width: 100%;
 }
 
 .product-card img {

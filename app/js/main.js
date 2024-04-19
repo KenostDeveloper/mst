@@ -1407,6 +1407,62 @@ if(changeAddresBtn){
 	}
 }
 
+const kenostDropzone = document.querySelectorAll('.kenost-dropzone');
+
+if(kenostDropzone){
+	for(let i = 0; i < kenostDropzone.length; i++){
+		//kenostDropzone[i].id
+		
+		let myDropzone = new Dropzone(`#${kenostDropzone[i].id}`,
+			{
+				maxFiles: 8,
+				autoProcessQueue: true,
+				parallelUploads: 1,
+				uploadMultiple: true,
+				paramName: "file", // имя параметра, который будет использоваться сервером для получения файла
+				url: "/forms/upload-file.php", // URL-адрес, на который отправляются данные
+				method: "post", // метод отправки данных (например, post или get)
+				maxFilesize: 20, // максимальный размер файла в мегабайтах
+				addRemoveLinks: true, // добавление ссылок для удаления загруженных файлов
+				acceptedFiles: "image/*,.mp4",
+				init: function(){
+					var myDropzone = this;
+					this.on("success", function(file, response) {
+						$(file.previewElement).append( $('<input type="hidden" name="media-ids[]" id="media-ids[]" class="media-ids dz-media-id" value="' + response +'">') );
+					});
+				}
+			}
+		);
+
+		// Dropzone.options[convert(kenostDropzone[i].id)] = {
+		// 	autoProcessQueue: true,
+		// 	parallelUploads: 1,
+		// 	//   uploadMultiple: true,
+		// 	paramName: "file", // имя параметра, который будет использоваться сервером для получения файла
+		// 	url: "/forms/upload-file.php", // URL-адрес, на который отправляются данные
+		// 	method: "post", // метод отправки данных (например, post или get)
+		// 	maxFilesize: 20, // максимальный размер файла в мегабайтах
+		// 	addRemoveLinks: true, // добавление ссылок для удаления загруженных файлов
+		// 	acceptedFiles: "image/*,.mp4",
+		// 	init: function(){
+		// 		var myDropzone = this;
+		// 		this.on("success", function(file, response) {
+		// 			$(file.previewElement).append( $('<input type="hidden" name="media-ids[]" id="media-ids[]" class="media-ids dz-media-id" value="' + response +'">') );
+		// 		});
+		// 	}
+		// };
+}}
+
+function convert(str) {
+    var arrayOfStrings = str.split("-");
+
+	for(let i = 0; i < arrayOfStrings.length; i++){
+		arrayOfStrings[i] = arrayOfStrings[i].charAt(0).toUpperCase() + arrayOfStrings[i].slice(1)
+	}
+
+	return arrayOfStrings.join('')
+}
+
 // DREPZONE
 
 Dropzone.options.myDropzone = {
@@ -1907,6 +1963,36 @@ if(allShop && allShopToggle){
 	for(let i = 0; i < allShopToggle.length; i++){
 		allShopToggle[i].addEventListener('click', () => {
 			allShop.classList.toggle("show")
+		})
+	}
+}
+
+const linkGenerate = document.querySelectorAll('.js-link-generate-products-id');
+const productsIdInput = document.getElementById('id-products-return');
+const hrefProductId = document.getElementById('href-product-id')
+let productsId = [];
+
+
+if(linkGenerate && productsIdInput && hrefProductId){
+	for(let i = 0; i < linkGenerate.length; i++){
+		linkGenerate[i].addEventListener('change', () => {
+			if(linkGenerate[i].checked){
+				productsId.push(linkGenerate[i].value)
+			}else{
+				productsId = productsId.filter((number) => number !== linkGenerate[i].value);
+			}
+
+			let ids = ""
+
+			for(let j = 0; j < productsId.length; j++){
+				if(j != 0){
+					ids += ","+productsId[j]
+				}else{
+					ids += productsId[j]
+				}
+			}
+
+			hrefProductId.href = productsIdInput.value + ids
 		})
 	}
 }
