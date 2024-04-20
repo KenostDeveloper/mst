@@ -200,6 +200,14 @@ var swipertree = new Swiper(".dartSwiperNew", {
         nextEl: ".swiper-new-next",
         prevEl: ".swiper-new-prev",
     },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperNew');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 1.9,
@@ -239,6 +247,14 @@ var swipertree = new Swiper(".dartSwiperSezon", {
         nextEl: ".swiper-sezon-next",
         prevEl: ".swiper-sezon-prev",
     },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 2,
@@ -278,6 +294,14 @@ var swipertree = new Swiper(".dartSwiperIdea", {
         nextEl: ".swiper-idea-next",
         prevEl: ".swiper-idea-prev",
     },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 1.9,
@@ -317,6 +341,14 @@ var swipertree = new Swiper(".dartSwiperEveryDay", {
         nextEl: ".swiper-idea-next",
         prevEl: ".swiper-idea-prev",
     },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 1.5,
