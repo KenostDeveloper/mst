@@ -69,6 +69,13 @@
         .active{
             background-color: var(--btn-secondary-outline-background);
         }
+
+        img{
+            width: 24px;
+            height: 24px !important;
+            object-fit: contain;
+            margin-right: 12px;
+        }
     }
 }
 
@@ -239,6 +246,7 @@
 .product-card{
     display: flex;
     gap: 12px;
+    width: 100%;
 
     img{
         width: 90px !important;
