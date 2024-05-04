@@ -4192,6 +4192,11 @@ ul {
   z-index: 3;
 }
 
+.kenost-err {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
 .dart-pagination ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10272,6 +10277,14 @@ ul {
   gap: 40px;
 }
 
+.big_code_block {
+  margin-top: 20px;
+}
+
+.profile-return-info + .profile-return-info {
+  margin-top: 32px;
+}
+
 .profile-return-info {
   gap: 16px !important;
 }
@@ -10290,6 +10303,7 @@ ul {
   border-radius: 5px;
   background: var(--btn-secondary-outline-background);
   padding: 16px;
+  width: calc(100% - 40px);
 }
 
 .profile-return-info__answer b {
