@@ -120,6 +120,10 @@
   content: "\e923";
 }
 
+.d_icon-comparison:before {
+  content: "\e90c";
+}
+
 .d_icon-play:before {
   content: "\e922";
 }
@@ -7414,6 +7418,15 @@ ul {
   font-size: 16px !important;
 }
 
+.busket-center-els {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .button-mini-block {
   display: block !important;
 }
@@ -7858,6 +7871,8 @@ ul {
   .dart-order__content {
     width: 600px;
     padding: 32px;
+    height: 100%;
+    overflow-y: auto;
   }
   .dart-order__inputs-container {
     height: 100%;
@@ -7867,13 +7882,13 @@ ul {
     height: fit-content;
   }
   .dart-order__container {
-    height: calc(100% - 240px);
-    overflow-y: auto;
+    height: 100%;
     padding-bottom: 0;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: auto;
   }
   .dart-order__container::-webkit-scrollbar {
     width: 8px;
@@ -7902,9 +7917,8 @@ ul {
     overflow-y: unset;
   }
   .dart-order__oplata {
-    position: absolute;
-    bottom: 20px;
-    width: calc(100% - 64px);
+    position: relative;
+    bottom: 0;
     background: #FFF;
     z-index: 11;
   }
@@ -7930,12 +7944,12 @@ ul {
     font-size: 16px;
   }
   .changeshop.showList .changeshop__list {
+    display: none;
+  }
+  .changeshop.showList .changeshop__map {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .changeshop.showList .changeshop__map {
-    display: none;
   }
   .changeshop.showList .changeshop__mobile .map {
     display: -webkit-inline-box;
@@ -8038,7 +8052,7 @@ ul {
     width: 500px;
     padding: 0;
   }
-  .changeshop__list {
+  .changeshop__map {
     display: none;
   }
   .changeshop__mobile {
@@ -8110,7 +8124,7 @@ ul {
     padding: 20px;
   }
   .dart-order__oplata {
-    width: calc(100% - 40px);
+    width: 100%;
   }
   .dart-order__container {
     gap: 16px;
@@ -10961,7 +10975,6 @@ ul {
   }
   .promo-info img {
     width: 100% !important;
-    height: 200px !important;
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 16px;

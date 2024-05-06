@@ -958,7 +958,7 @@ if(btnMapOn){
 	for(let i = 0; i < btnMapOn.length; i++) {
 		btnMapOn[i].addEventListener('click', () => {
 			clearAllChangeshop()
-			changeshop.classList.remove('showList')
+			changeshop.classList.add('showList')
 		})
 	}
 }
@@ -967,7 +967,7 @@ if(btnListOn){
 	for(let i = 0; i < btnListOn.length; i++) {
 		btnListOn[i].addEventListener('click', () => {
 			clearAllChangeshop()
-			changeshop.classList.add('showList')
+			changeshop.classList.remove('showList')
 		})
 	}
 }

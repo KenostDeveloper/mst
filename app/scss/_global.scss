@@ -4502,6 +4502,11 @@ ul{
 	}
 }
 
+.busket-center-els{
+	display: flex;
+    align-items: center;
+}
+
 .button-mini-block{
 	display: block !important;
 }
@@ -4935,6 +4940,8 @@ ul{
 		&__content{
 			width: 600px;
 			padding: 32px;
+			height: 100%;
+			overflow-y: auto;
 		}
 
 		&__inputs-container{
@@ -4944,10 +4951,12 @@ ul{
 		}
 
 		&__container{
-    		height: calc(100% - 240px);
-			overflow-y: auto;
+    		// height: calc(100% - 240px);
+			height: 100%;
+			// overflow-y: auto;
 			padding-bottom: 0;
-			flex-direction: column-reverse;
+			flex-direction: column;
+			overflow-y: auto;
 
 			&::-webkit-scrollbar {
 				width: 8px;
@@ -4978,9 +4987,9 @@ ul{
 		}
 
 		&__oplata{
-			position: absolute;
-			bottom: 20px;
-			width: calc(100% - 64px);
+			position: relative;
+			bottom: 0;
+			// height: 100%;
 			background: #FFF;
 			z-index: 11;
 		}
@@ -5022,11 +5031,11 @@ ul{
 		&.showList{
 			.changeshop{
 				&__list{
-					display: flex;
+					display: none;
 				}
 
 				&__map{
-					display: none;
+					display: flex;
 				}
 			}
 
@@ -5132,7 +5141,7 @@ ul{
 			padding: 0;
 		}
 
-		&__list{
+		&__map{
 			display: none;
 		}
 
@@ -5221,7 +5230,7 @@ ul{
 		}
 
 		&__oplata{
-			width: calc(100% - 40px);
+			width: 100%;
 		}
 
 		&__container{
