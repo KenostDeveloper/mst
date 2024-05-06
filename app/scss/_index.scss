@@ -55,6 +55,70 @@
     }
 }
 
+.dartSwiperSezon{
+    &.loadSwiper{
+        max-height: 290px;
+        overflow: hidden;
+
+        .dartSwiperSezon__slide{
+            width: calc(20% - 8px);
+            margin-right: 8px;
+
+            img{
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+
+.dartSwiperNew{
+    &.loadSwiper{
+        max-height: 260px;
+        overflow: hidden;
+
+        .dartSwiperNew__slide{
+            width: 200px;
+            margin-right: 8px;
+
+            img{
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+
+.dartSwiperEveryDay{
+    &.loadSwiper{
+        max-height: 159px;
+        overflow: hidden;
+
+        .dartSwiperNew__slide{
+            width: 280px;
+            margin-right: 8px;
+
+            img{
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+
+.dartSwiperIdea{
+    &.loadSwiper{
+        max-height: 260px;
+        overflow: hidden;
+
+        .dartSwiperIdea__slide{
+            width: 200px;
+            margin-right: 8px;
+
+            img{
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+
 
 
 

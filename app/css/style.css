@@ -717,6 +717,66 @@ a {
      object-fit: contain !important;
 }
 
+.dartSwiperSezon.loadSwiper {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+.dartSwiperSezon.loadSwiper .dartSwiperSezon__slide {
+  width: calc(20% - 8px);
+  margin-right: 8px;
+}
+
+.dartSwiperSezon.loadSwiper .dartSwiperSezon__slide img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.dartSwiperNew.loadSwiper {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.dartSwiperNew.loadSwiper .dartSwiperNew__slide {
+  width: 200px;
+  margin-right: 8px;
+}
+
+.dartSwiperNew.loadSwiper .dartSwiperNew__slide img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.dartSwiperEveryDay.loadSwiper {
+  max-height: 159px;
+  overflow: hidden;
+}
+
+.dartSwiperEveryDay.loadSwiper .dartSwiperNew__slide {
+  width: 280px;
+  margin-right: 8px;
+}
+
+.dartSwiperEveryDay.loadSwiper .dartSwiperNew__slide img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.dartSwiperIdea.loadSwiper {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.dartSwiperIdea.loadSwiper .dartSwiperIdea__slide {
+  width: 200px;
+  margin-right: 8px;
+}
+
+.dartSwiperIdea.loadSwiper .dartSwiperIdea__slide img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .promoSwiper {
   width: 100%;
   border-radius: 5px;
