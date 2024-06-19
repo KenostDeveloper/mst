@@ -65,6 +65,12 @@
             bottom: 0;
         }
 
+        &.time_close{
+			&::before{
+				background: #FF0000;
+			}
+		}
+
         img{
             width: 24px;
             height: 24px !important;

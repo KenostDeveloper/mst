@@ -3539,6 +3539,14 @@ ul {
   }
 }
 
+#city_choice_title p p {
+  margin-top: 4px;
+}
+
+#dm-warn-count-tovar {
+  z-index: 25;
+}
+
 .shop_choice {
   display: -ms-grid;
   display: grid;
@@ -4384,6 +4392,20 @@ ul {
   width: 6px;
   height: 6px;
   background: #8FFF00;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0px;
+}
+
+.shop-map__timing.time_close::before {
+  width: 6px;
+  height: 6px;
+  background: #FF0000;
   border-radius: 50%;
   position: absolute;
   content: "";
@@ -7965,7 +7987,9 @@ ul {
     display: none;
   }
   .changeshop.showList .changeshop__mobile .close {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .changeshop.showRating .changeshop__list {
     display: none;
@@ -7991,9 +8015,7 @@ ul {
     display: inline-flex;
   }
   .changeshop__mobile .close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -12166,6 +12188,10 @@ ol.def-section li + li {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.header-shop__image.time_close::before {
+  background: #FF0000;
 }
 
 .header-shop__image img {

@@ -1277,7 +1277,9 @@ if(dartQuantityMinus && dartQuantityPlus){
 	for(let i = 0; i < dartQuantityPlus.length; i++){
 		dartQuantityPlus[i].addEventListener('click', () => {
 			const getInput = dartQuantityMinus[i].parentElement.querySelector('.dart-quantity__counter');
-			getInput.value = Number(getInput.value) + 1
+			if(getInput.value != getInput.max){
+				getInput.value = Number(getInput.value) + 1
+			}
 		})
 	}
 }

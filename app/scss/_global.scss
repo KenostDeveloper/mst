@@ -1070,6 +1070,16 @@ ul{
     }
 }
 
+#city_choice_title p{
+	p{
+		margin-top: 4px;
+	}
+}
+
+#dm-warn-count-tovar{
+	z-index: 25;
+}
+
 
 // Выбор магазина
 
@@ -1887,6 +1897,20 @@ ul{
 			top: 50%;
 			transform: translate(0, -50%);
 			left: 0px;
+		}
+
+		&.time_close{
+			&::before{
+				width: 6px;
+				height: 6px;
+				background: #FF0000;
+				border-radius: 50%;
+				position: absolute;
+				content: "";
+				top: 50%;
+				transform: translate(0, -50%);
+				left: 0px;
+			}
 		}
 	}
 
@@ -5054,7 +5078,7 @@ ul{
 				}
 
 				.close{
-					display: none;
+					display: flex;
 				}
 			}
 		}
@@ -5090,7 +5114,7 @@ ul{
 			}
 
 			.close{
-				display: flex;
+				display: none;
 				align-items: center;
 				justify-content: center;
 				width: 36px;
