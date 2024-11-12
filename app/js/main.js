@@ -24,7 +24,6 @@ if(citiСhoiceСlose && modal_city){
         modal_city.classList.remove('show')
     })
 }
-
 //Свайпер Акции большой
 let swiper = new Swiper(".promoSwiper", {
     parallax: true,
@@ -109,8 +108,10 @@ let swiper = new Swiper(".promoSwiper", {
 
 
 //Свайпер акции сбоку
+
+//Свайпер акции сбоку
 var swipertwo = new Swiper(".promoSwiperMini", {
-	on: {
+    on: {
 		init: function () {
 		  const dColPromoSwiper = document.querySelector('.d-col-promoSwiperMini');
 		  if(dColPromoSwiper){
@@ -120,17 +121,16 @@ var swipertwo = new Swiper(".promoSwiperMini", {
 	},
     slidesPerView: 2,
     spaceBetween: 8,
-    loop: true,
     navigation: {
       nextEl: ".swiper-mini-next",
       prevEl: ".swiper-mini-prev",
     },
 	breakpoints: {
 		0: {
-			slidesPerView: 1.8,
+			slidesPerView: 1.2,
 		},
 		430: {
-			slidesPerView: 2.1,
+			slidesPerView: 1.4,
 		},
 		600: {
 			slidesPerView: 2.5,
@@ -158,6 +158,152 @@ var swipertwo = new Swiper(".promoSwiperMini", {
 		}
 	}
 });
+
+
+//Свайпер готовимся к сезону
+var swipertree = new Swiper(".dartSwiperSezon", {
+    slidesPerView: 5,
+    spaceBetween: 8,
+    navigation: {
+        nextEl: ".swiper-sezon-next",
+        prevEl: ".swiper-sezon-prev",
+    },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+		},
+		430: {
+			slidesPerView: 2.8,
+		},
+		600: {
+			slidesPerView: 3.6,
+		},
+		768: {
+			slidesPerView: 4,
+		},
+		991: {
+			slidesPerView: 5,
+		},
+		1201: {
+			slidesPerView: 4.5,
+		},
+		1400: {
+			slidesPerView: 5,
+		},
+		1600: {
+			slidesPerView: 5.5,
+		},
+		1901: {
+			slidesPerView: 5,
+		}
+	}
+});
+
+//Идеи для подарков
+var swipertree = new Swiper(".dartSwiperIdea", {
+    slidesPerView: 5,
+    spaceBetween: 8,
+    navigation: {
+        nextEl: ".swiper-idea-next",
+        prevEl: ".swiper-idea-prev",
+    },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperIdea');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.9,
+		},
+		430: {
+			slidesPerView: 2.8,
+		},
+		600: {
+			slidesPerView: 3.6,
+		},
+		768: {
+			slidesPerView: 4.6,
+		},
+		991: {
+			slidesPerView: 5.6,
+		},
+		1201: {
+			slidesPerView: 5,
+		},
+		1400: {
+			slidesPerView: 6,
+		},
+		1600: {
+			slidesPerView: 6.5,
+		},
+		1901: {
+			slidesPerView: 5.5,
+		}
+	}
+});
+
+//На каждый день
+var swipertree = new Swiper(".dartSwiperEveryDay", {
+    slidesPerView: 5,
+    spaceBetween: 8,
+    navigation: {
+        nextEl: ".swiper-every-next",
+        prevEl: ".swiper-every-prev",
+    },
+	on: {
+		init: function () {
+		  const dColPromoSwiper = document.querySelector('.dartSwiperEveryDay');
+		  if(dColPromoSwiper){
+			dColPromoSwiper.classList.remove('loadSwiper')
+		  }
+		},
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.5,
+		},
+		430: {
+			slidesPerView: 2.2,
+		},
+		600: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 3.6,
+		},
+		991: {
+			slidesPerView: 4,
+		},
+		1201: {
+			slidesPerView: 3,
+		},
+		1400: {
+			slidesPerView: 3.5,
+		},
+		1800: {
+			slidesPerView: 4,
+		}
+	}
+});
+const menuCatalogButton = document.querySelector('.menu-catalog-button');
+
+if(menuCatalogButton){
+	menuCatalogButton.addEventListener('click', () => {
+		menuCatalogButton.parentElement.classList.toggle('menuShow');
+	})
+}
 
 var swipertwo = new Swiper(".brandPromoSwiperMini", {
     spaceBetween: 8,
@@ -238,153 +384,6 @@ var swipertree = new Swiper(".dartSwiperNew", {
 		}
 	}
 });
-
-//Свайпер готовимся к сезону
-var swipertree = new Swiper(".dartSwiperSezon", {
-    slidesPerView: 5,
-    spaceBetween: 8,
-    navigation: {
-        nextEl: ".swiper-sezon-next",
-        prevEl: ".swiper-sezon-prev",
-    },
-	on: {
-		init: function () {
-		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
-		  if(dColPromoSwiper){
-			dColPromoSwiper.classList.remove('loadSwiper')
-		  }
-		},
-	},
-	breakpoints: {
-		0: {
-			slidesPerView: 2,
-		},
-		430: {
-			slidesPerView: 2.8,
-		},
-		600: {
-			slidesPerView: 3.6,
-		},
-		768: {
-			slidesPerView: 4,
-		},
-		991: {
-			slidesPerView: 5,
-		},
-		1201: {
-			slidesPerView: 4.5,
-		},
-		1400: {
-			slidesPerView: 5,
-		},
-		1600: {
-			slidesPerView: 5.5,
-		},
-		1901: {
-			slidesPerView: 5,
-		}
-	}
-});
-
-//Идеи для подарков
-var swipertree = new Swiper(".dartSwiperIdea", {
-    slidesPerView: 5,
-    spaceBetween: 8,
-    navigation: {
-        nextEl: ".swiper-idea-next",
-        prevEl: ".swiper-idea-prev",
-    },
-	on: {
-		init: function () {
-		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
-		  if(dColPromoSwiper){
-			dColPromoSwiper.classList.remove('loadSwiper')
-		  }
-		},
-	},
-	breakpoints: {
-		0: {
-			slidesPerView: 1.9,
-		},
-		430: {
-			slidesPerView: 2.8,
-		},
-		600: {
-			slidesPerView: 3.6,
-		},
-		768: {
-			slidesPerView: 4.6,
-		},
-		991: {
-			slidesPerView: 5.6,
-		},
-		1201: {
-			slidesPerView: 5,
-		},
-		1400: {
-			slidesPerView: 6,
-		},
-		1600: {
-			slidesPerView: 6.5,
-		},
-		1901: {
-			slidesPerView: 5.5,
-		}
-	}
-});
-
-//На каждый день
-var swipertree = new Swiper(".dartSwiperEveryDay", {
-    slidesPerView: 5,
-    spaceBetween: 8,
-    navigation: {
-        nextEl: ".swiper-idea-next",
-        prevEl: ".swiper-idea-prev",
-    },
-	on: {
-		init: function () {
-		  const dColPromoSwiper = document.querySelector('.dartSwiperSezon');
-		  if(dColPromoSwiper){
-			dColPromoSwiper.classList.remove('loadSwiper')
-		  }
-		},
-	},
-	breakpoints: {
-		0: {
-			slidesPerView: 1.5,
-		},
-		430: {
-			slidesPerView: 2.2,
-		},
-		600: {
-			slidesPerView: 3,
-		},
-		768: {
-			slidesPerView: 3.6,
-		},
-		991: {
-			slidesPerView: 4,
-		},
-		1201: {
-			slidesPerView: 3,
-		},
-		1400: {
-			slidesPerView: 3.5,
-		},
-		1800: {
-			slidesPerView: 4,
-		}
-	}
-});
-
-const menuCatalogButton = document.querySelector('.menu-catalog-button');
-
-if(menuCatalogButton){
-	menuCatalogButton.addEventListener('click', () => {
-		menuCatalogButton.parentElement.classList.toggle('menuShow');
-	})
-}
-
 
 //Свайпер производители
 var swipertree = new Swiper(".dartSwiperManufacturer", {
@@ -554,7 +553,6 @@ var mySwiperProduct = new Swiper(".mySwiperProduct", {
   });
   var mySwiperProductTwo = new Swiper(".mySwiperProductTwo", {
 	loop: true,
-	effect: "fade",
 	spaceBetween: 8,
 	navigation: {
 	  nextEl: ".swiper-product-next",
@@ -632,7 +630,7 @@ if(menuItems){
     }
 }
 
-//Карта
+/* //Карта
 let stores_map = {
 
 	options: {
@@ -745,7 +743,7 @@ let stores_map = {
 
 }
 
-ymaps.ready(stores_map.init);
+ymaps.ready(stores_map.init); */
 
 //Слайдер на странице поиска
 const alldartSwiperSearch = document.querySelectorAll('.dartSwiperSearch');
@@ -762,10 +760,13 @@ if(alldartSwiperSearch){
 			},
 			breakpoints: {
 				0: {
-					slidesPerView: 2,
+					slidesPerView: 1.5,
+				},
+				300: {
+					slidesPerView: 1.5,
 				},
 				410: {
-					slidesPerView: 2.5,
+					slidesPerView: 2.3,
 				},
 				600: {
 					slidesPerView: 3,
@@ -800,6 +801,7 @@ if(alldartSwiperSearch){
 }
 
 // Слайдер сравнения
+
 var swiperContrast = new Swiper(".dartSwiperContrast", {
 	slidesPerView: 4,
 	watchSlidesProgress: true,
@@ -862,7 +864,7 @@ if(toggleFilterCity){
 		toggleFilterCity[i].addEventListener('click', () => {
 
 			//Получаем индекс нажатой кнопки
-			let cheackFilter = document.getElementsByName("sity_filter_id");
+			let cheackFilter = document.getElementsByName("city_filter_id");
 
 			if(cheackFilter[0].checked){
 				document.getElementById("choice_city").classList.add("filter_city")
@@ -922,71 +924,74 @@ if(toggleFilterCity){
 // }
 
 const changeshop = document.querySelector('.changeshop') //Модалка
+if(changeshop){
+	const btnActiveChangeshopOn = document.querySelectorAll('.btnActiveChangeshopOn'); //Открывает модалку
+	const btnActiveChangeshopOff = document.querySelectorAll('.btnActiveChangeshopOff'); //Закрывает модалку
+	const btnMapOn = document.querySelectorAll('.btnMapOn'); //Открываем карту на мобильных устройствах
+	const btnListOn = document.querySelectorAll('.btnListOn'); //Открываем список на мобильных устройствах
+	const btnRatingOn = document.querySelectorAll('.btnRatingOn') //Открываем рейтинг
+	const btnRatingOff = document.querySelectorAll('.btnRatingOff') //Закрываем рейтинг
 
-const btnActiveChangeshopOn = document.querySelectorAll('.btnActiveChangeshopOn'); //Открывает модалку
-const btnActiveChangeshopOff = document.querySelectorAll('.btnActiveChangeshopOff'); //Закрывает модалку
-const btnMapOn = document.querySelectorAll('.btnMapOn'); //Открываем карту на мобильных устройствах
-const btnListOn = document.querySelectorAll('.btnListOn'); //Открываем список на мобильных устройствах
-const btnRatingOn = document.querySelectorAll('.btnRatingOn') //Открываем рейтинг
-const btnRatingOff = document.querySelectorAll('.btnRatingOff') //Закрываем рейтинг
-
-function clearAllChangeshop(){
-	changeshop.classList.remove('showList')
-	changeshop.classList.remove('showRating')
-}
-
-if(btnActiveChangeshopOn){
-	for(let i = 0; i < btnActiveChangeshopOn.length; i++){
-		btnActiveChangeshopOn[i].addEventListener('click', () => {
-			clearAllChangeshop()
-			changeshop.classList.add('show')
-			body.style.overflow = "hidden"
-		})
+	function clearAllChangeshop(){
+		changeshop.classList.remove('showList')
+		changeshop.classList.remove('showRating')
 	}
-}
 
-if(btnActiveChangeshopOff){
-	for(let i = 0; i < btnActiveChangeshopOff.length; i++){
-		btnActiveChangeshopOff[i].addEventListener('click', () => {
-			changeshop.classList.remove('show')
-			body.style.overflow = "auto"
-		})
+	if(btnActiveChangeshopOn){
+		for(let i = 0; i < btnActiveChangeshopOn.length; i++){
+			btnActiveChangeshopOn[i].addEventListener('click', () => {
+				clearAllChangeshop()
+				changeshop.classList.add('show')
+				body.style.overflow = "hidden"
+			})
+		}
 	}
-}
 
-if(btnMapOn){
-	for(let i = 0; i < btnMapOn.length; i++) {
-		btnMapOn[i].addEventListener('click', () => {
-			clearAllChangeshop()
-			changeshop.classList.add('showList')
-		})
+	if(btnActiveChangeshopOff){
+		for(let i = 0; i < btnActiveChangeshopOff.length; i++){
+			btnActiveChangeshopOff[i].addEventListener('click', () => {
+				changeshop.classList.remove('show')
+				body.style.overflow = "auto"
+			})
+		}
 	}
-}
 
-if(btnListOn){
-	for(let i = 0; i < btnListOn.length; i++) {
-		btnListOn[i].addEventListener('click', () => {
-			clearAllChangeshop()
-			changeshop.classList.remove('showList')
-		})
+	
+	if(btnListOn){
+		for(let i = 0; i < btnListOn.length; i++) {
+			btnListOn[i].addEventListener('click', () => {
+				clearAllChangeshop()
+				changeshop.classList.add('showList')
+			})
+		}
 	}
-}
 
-if(btnRatingOn){
-	for(let i = 0; i < btnRatingOn.length; i++) {
-		btnRatingOn[i].addEventListener('click', () => {
-			clearAllChangeshop()
-			changeshop.classList.add('showRating')
-		})
+	if(btnRatingOn){
+		for(let i = 0; i < btnRatingOn.length; i++) {
+			btnRatingOn[i].addEventListener('click', () => {
+				clearAllChangeshop()
+				changeshop.classList.add('showRating')
+			})
+		}
 	}
-}
 
-if(btnRatingOff){
-	for(let i = 0; i < btnRatingOff.length; i++) {
-		btnRatingOff[i].addEventListener('click', () => {
-			changeshop.classList.remove('showRating')
-			changeshop.classList.add('showList')
-		})
+
+	if(btnRatingOn){
+		for(let i = 0; i < btnRatingOn.length; i++) {
+			btnRatingOn[i].addEventListener('click', () => {
+				clearAllChangeshop()
+				changeshop.classList.add('showRating')
+			})
+		}
+	}
+
+	if(btnRatingOff){
+		for(let i = 0; i < btnRatingOff.length; i++) {
+			btnRatingOff[i].addEventListener('click', () => {
+				changeshop.classList.remove('showRating')
+				changeshop.classList.add('showList')
+			})
+		}
 	}
 }
 
@@ -1045,28 +1050,8 @@ if(btnRatingOff){
 // 	}
 // }
 
-$(".sliderui .polzunok-5").slider({
-    min: $(".sliderui .sliderui-min input").attr('data-min') / 1,
-    max: $(".sliderui .sliderui-max input").attr('data-max'),
-    values: [$(".sliderui .sliderui-min input").attr('data-min'), $(".sliderui .sliderui-max input").attr('data-max')],
-    range: true,
-    animate: "fast",
-    slide : function(event, ui) {    
-        $(".sliderui-min input").val(ui.values[ 0 ]);   
-        $(".sliderui-max input").val(ui.values[ 1 ]);  
-    }    
-});
 
-if(document.getElementById("df_filters")){
-	document.getElementById("df_filters").addEventListener('filter_update', () => {
-		$( ".sliderui .polzunok-5" ).slider( "option", "max", $(".sliderui .sliderui-max input").attr('data-max'));
-		$( ".sliderui .polzunok-5" ).slider( "option", "min", $(".sliderui .sliderui-min input").attr('data-min') / 1);	
-	})
-}
-
-
-
-$(".sliderui-min input").val($(".sliderui .polzunok-5").slider("values", 0));
+/* $(".sliderui-min input").val($(".sliderui .polzunok-5").slider("values", 0));
 $(".sliderui-max input").val($(".sliderui .polzunok-5").slider("values", 1));
 $(".sliderui input").change(function() {
     var input_left = $(".sliderui-min input").val().replace(/[^0-9]/g, ''),    
@@ -1101,7 +1086,7 @@ $(".sliderui input").change(function() {
     if (input_right != where_right) {
         $(".sliderui .polzunok-5").slider("values", 1, input_right);
     }
-});
+}); */
 
 //Модальное окно фильтров
 const showModalFiltrs = document.querySelectorAll('.showModalFiltrs');
@@ -1235,7 +1220,6 @@ if(closeDartModal){
 		closeDartModal[i].addEventListener('click', () => {
 			closeDartModal[i].classList.remove('show')
 			body.style.overflow = "auto"
-			console.log(closeDartModalBtn)
 		})
 	}
 }
@@ -1251,38 +1235,13 @@ if(closeDartModalBtn){
 }
 
 
-if(dartModalTogglers){
+/* if(dartModalTogglers){
 	for (let i = 0; i < dartModalTogglers.length; i++) {
         dartModalTogglers[i].addEventListener("click", function() {
             dartModalTogglers[i].closest('.dart-modal').classList.remove("show");
         });
     }
-}
-//Кликер в корзине
-
-const dartQuantityMinus = document.querySelectorAll('.dart-quantity__btn.minus');
-const dartQuantityPlus = document.querySelectorAll('.dart-quantity__btn.plus');
-
-
-if(dartQuantityMinus && dartQuantityPlus){
-	for(let i = 0; i < dartQuantityMinus.length; i++){
-		dartQuantityMinus[i].addEventListener('click', () => {
-			const getInput = dartQuantityMinus[i].parentElement.querySelector('.dart-quantity__counter');
-			if(getInput.value != 1){
-				getInput.value = Number(getInput.value) - 1
-			}
-		})
-	}
-
-	for(let i = 0; i < dartQuantityPlus.length; i++){
-		dartQuantityPlus[i].addEventListener('click', () => {
-			const getInput = dartQuantityMinus[i].parentElement.querySelector('.dart-quantity__counter');
-			if(getInput.value != getInput.max){
-				getInput.value = Number(getInput.value) + 1
-			}
-		})
-	}
-}
+} */
 
 //Каталог в шапке
 
@@ -1365,48 +1324,10 @@ if(deliveryMethods){
 	}
 }
 
-//Открытие доставки
-const basketToggleModal = document.querySelectorAll('.basketToggleModal');
-const DartOrder = document.querySelector('.dart-order');
-
-if(basketToggleModal){
-	for(let i = 0; i<basketToggleModal.length; i++){
-		basketToggleModal[i].addEventListener('click', () => {
-			if(DartOrder.classList.contains('show')){
-				DartOrder.classList.remove('show')
-				body.style.overflow = "auto"
-			}else{
-				DartOrder.classList.add('show')
-				body.style.overflow = "hidden"
-			}
-
-		})
-	}
-}
-
-//Новый адрес
-
-const newAddresToggleModal = document.querySelectorAll('.newAddresToggleModal');
-const newAddresDelivery = document.querySelector('.newAddresDelivery');
-
-if(newAddresToggleModal){
-	for(let i = 0; i<newAddresToggleModal.length; i++){
-		newAddresToggleModal[i].addEventListener('click', () => {
-			if(newAddresDelivery.classList.contains('show')){
-				newAddresDelivery.classList.remove('show')
-				body.style.overflow = "auto"
-			}else{
-				newAddresDelivery.classList.add('show')
-				body.style.overflow = "hidden"
-			}
-
-		})
-	}
-}
 
 //Модалка "Выберите пункт выдачи"
 
-const changePointToggleModal = document.querySelectorAll('.changePointToggleModal');
+/* const changePointToggleModal = document.querySelectorAll('.changePointToggleModal');
 const changeAddresPoint = document.querySelector('.changeAddresPoint');
 
 if(changePointToggleModal){
@@ -1421,14 +1342,13 @@ if(changePointToggleModal){
 			}
 		})
 	}
-}
+} */
 
 //Изменить кнопочка на модалке мои адреса
 const changeAddresBtn = document.querySelectorAll('.change-addres-btn');
 
 if(changeAddresBtn){
 	document.querySelector('.dart-modal__content').addEventListener('click', () => {
-		console.log('click')
 		for(let i = 0; i<changeAddresBtn.length; i++){
 			changeAddresBtn[i].classList.remove('show')
 		}
@@ -1442,19 +1362,21 @@ if(changeAddresBtn){
 }
 
 const kenostDropzone = document.querySelectorAll('.kenost-dropzone');
-
+// DREPZONE
 if(kenostDropzone){
 	for(let i = 0; i < kenostDropzone.length; i++){
 		//kenostDropzone[i].id
 		
+		
+
 		let myDropzone = new Dropzone(`#${kenostDropzone[i].id}`,
 			{
 				maxFiles: 8,
 				autoProcessQueue: true,
 				parallelUploads: 1,
-				uploadMultiple: true,
+				//   uploadMultiple: true,
 				paramName: "file", // имя параметра, который будет использоваться сервером для получения файла
-				url: "/forms/upload-file.php", // URL-адрес, на который отправляются данные
+				url: "/files/upload-file.php", // URL-адрес, на который отправляются данные
 				method: "post", // метод отправки данных (например, post или get)
 				maxFilesize: 20, // максимальный размер файла в мегабайтах
 				addRemoveLinks: true, // добавление ссылок для удаления загруженных файлов
@@ -1467,24 +1389,6 @@ if(kenostDropzone){
 				}
 			}
 		);
-
-		// Dropzone.options[convert(kenostDropzone[i].id)] = {
-		// 	autoProcessQueue: true,
-		// 	parallelUploads: 1,
-		// 	//   uploadMultiple: true,
-		// 	paramName: "file", // имя параметра, который будет использоваться сервером для получения файла
-		// 	url: "/forms/upload-file.php", // URL-адрес, на который отправляются данные
-		// 	method: "post", // метод отправки данных (например, post или get)
-		// 	maxFilesize: 20, // максимальный размер файла в мегабайтах
-		// 	addRemoveLinks: true, // добавление ссылок для удаления загруженных файлов
-		// 	acceptedFiles: "image/*,.mp4",
-		// 	init: function(){
-		// 		var myDropzone = this;
-		// 		this.on("success", function(file, response) {
-		// 			$(file.previewElement).append( $('<input type="hidden" name="media-ids[]" id="media-ids[]" class="media-ids dz-media-id" value="' + response +'">') );
-		// 		});
-		// 	}
-		// };
 }}
 
 function convert(str) {
@@ -1497,25 +1401,6 @@ function convert(str) {
 	return arrayOfStrings.join('')
 }
 
-// DREPZONE
-
-Dropzone.options.myDropzone = {
-	autoProcessQueue: true,
-	parallelUploads: 1,
-  //   uploadMultiple: true,
-	paramName: "file", // имя параметра, который будет использоваться сервером для получения файла
-	//url: "/forms/upload-file.php", // URL-адрес, на который отправляются данные
-	//method: "post", // метод отправки данных (например, post или get)
-	maxFilesize: 20, // максимальный размер файла в мегабайтах
-	addRemoveLinks: true, // добавление ссылок для удаления загруженных файлов
-	acceptedFiles: "image/*,.mp4",
-	// init: function(){
-	//   var myDropzone = this;
-	//   this.on("success", function(file, response) {
-	// 	  $(file.previewElement).append( $('<input type="hidden" name="media-ids[]" id="media-ids[]" class="media-ids dz-media-id" value="' + response +'">') );
-	//   });
-	// }
-  };
 
 
 
@@ -1656,8 +1541,6 @@ if(rightMenuOrderToggleError){
 	}
 }
 
-
-
 // Сравнение товаров (изменение данных)
 
 const swiperSlideVisible = document.querySelectorAll('.swiper-slide-visible')
@@ -1763,15 +1646,27 @@ if(productProperty && propertyMobile){
 
 const passwordForgot = document.querySelector('.dm-login__forgot');
 const dmLogin = document.querySelector('.dm-login');
+let isFogot = false;
 
 if(passwordForgot){
 	passwordForgot.addEventListener('click', () => {
 		if(dmLogin){
-			dmLogin.classList.add('forgot')
-			dmLogin.querySelector('h3').innerText = "Востановить пароль"
-			dmLogin.querySelectorAll('.dart-input-text')[1].style.display = 'none'
-			passwordForgot.style.display = 'none'
-			dmLogin.querySelector('.dart-btn').innerText = "Востановить"
+			if(!isFogot){
+				dmLogin.classList.add('forgot')
+				dmLogin.querySelector('span.h3').innerText = "Востановить пароль"
+				dmLogin.querySelectorAll('.dart-input-text')[1].style.display = 'none'
+				passwordForgot.innerText = "Вернуться ко входу"
+				dmLogin.querySelector('.dart-btn').innerText = "Востановить"
+				isFogot = true;
+			}else{
+				dmLogin.classList.remove('forgot')
+				dmLogin.querySelector('span.h3').innerText = "Добро пожаловать!"
+				dmLogin.querySelectorAll('.dart-input-text')[1].style.display = 'block'
+				passwordForgot.innerText = "Забыли пароль?"
+				dmLogin.querySelector('.dart-btn').innerText = "Войти"
+				isFogot = false;
+			}
+			
 		}
 	})
 }
@@ -1796,6 +1691,7 @@ if(modalSortClose){
 		})
 	}
 }
+
 
 let isVissible = true;
 const contrastSwiper = document.querySelector('.contrastSwiper');
@@ -1824,39 +1720,6 @@ if(target){
 }
 
 
-// const mobileBasketToggle = document.querySelectorAll('.mobileBasketToggle')
-// const mobileBasket = document.querySelector('.mobile-basket')
-
-
-// // if(mobileBasket){
-// // 	mobileBasket.addEventListener('click', () => {
-// // 		mobileBasket.classList.remove('show')
-// // 	})
-// // }
-
-// if(mobileBasketToggle){
-// 	for(let i = 0; i<mobileBasketToggle.length; i++){
-// 		if(mobileBasket){
-// 			mobileBasketToggle[i].addEventListener('click', () => {
-// 				mobileBasket.classList.toggle('show');
-// 			})
-
-// 			if(!mobileBasket.classList.contains('show')){
-// 				body.style.overflow = "hidden"
-// 			}else{
-// 				body.style.overflow = "auto"
-// 			}
-// 		}
-// 	}
-// }
-
-// document.onclick = function (e) {
-//     if (e.target.className != "d-col-basket") {
-//         mobileBasket.classList.toggle('show');
-//     };
-// };
-
-
 const mobileBasketToggle = document.querySelectorAll('.mobileBasketToggle')
 const mobileBasket = document.querySelector('.mobile-basket')
 let isModalBasket = false;
@@ -1873,25 +1736,20 @@ if(mobileBasketToggle && mobileBasket){
 	}
 }
 
-
-
-	document.onclick = function (e) {
-		if(isModalBasket){
-			let listClass = e.target.classList;
-			console.log(listClass)
-			for(let i = 0; i < listClass.length; i++){
-				if(listClass[i] == "mobileBasketToggleClose"){
-					mobileBasket.classList.remove('show')
-					body.style.overflow = "auto"
-					isModalBasket = false
-					break;
-				}
+document.onclick = function (e) {
+	if(isModalBasket){
+		let listClass = e.target.classList;
+		for(let i = 0; i < listClass.length; i++){
+			if(listClass[i] == "mobileBasketToggleClose"){
+				mobileBasket.classList.remove('show')
+				body.style.overflow = "auto"
+				isModalBasket = false
+				break;
 			}
 		}
-	};
+	}
+};
 
-
-	
 //Модальное окно каталога
 const showModalCatalog = document.querySelectorAll('.showModalCatalog');
 const CatalogModal = document.querySelector('.CatalogModal');
@@ -1933,7 +1791,7 @@ if(deleteList){
 					list: list
 				},
 				success:  function(data) {
-					location.reload();
+					document.location.href = window.location.href
 				}
 			});
 		})
@@ -1942,7 +1800,7 @@ if(deleteList){
 
 const deleteAllList = document.querySelector('.deleteAllList');
 if(deleteAllList){
-	deleteList.addEventListener('click', (e) => {
+	deleteAllList.addEventListener('click', (e) => {
 		e.preventDefault();
 		$.ajax({
 			type: "POST",
@@ -1958,6 +1816,7 @@ if(deleteAllList){
 	})
 }
 
+
 const reloadJs = document.querySelectorAll('.reload-js')
 
 if(reloadJs){
@@ -1968,7 +1827,10 @@ if(reloadJs){
 	}
 }
 
+
 // фильтры
+
+
 
 const toggleAllFilters = document.querySelectorAll('.search-filtrs_all-filter');
 
@@ -1978,10 +1840,8 @@ if(toggleAllFilters){
 			toggleAllFilters[i].parentElement.classList.toggle('show');
 			if(toggleAllFilters[i].parentElement.classList.contains('show')){
 				toggleAllFilters[i].innerText = "Свернуть"
-				console.log('Свернуть')
 			}else{
 				toggleAllFilters[i].innerText = "Показать все"
-				console.log('Показать все')
 				
 			}
 
@@ -1989,8 +1849,7 @@ if(toggleAllFilters){
 	}
 }
 
-
-const allShop = document.querySelector('.all-shop');
+const allShop = document.querySelector('.all-shops');
 const allShopToggle = document.querySelectorAll('.all-shop__togle');
 
 if(allShop && allShopToggle){
@@ -2000,6 +1859,8 @@ if(allShop && allShopToggle){
 		})
 	}
 }
+
+
 
 const linkGenerate = document.querySelectorAll('.js-link-generate-products-id');
 const productsIdInput = document.getElementById('id-products-return');
@@ -2027,6 +1888,275 @@ if(linkGenerate && productsIdInput && hrefProductId){
 			}
 
 			hrefProductId.href = productsIdInput.value + ids
+		})
+	}
+}
+
+const mstReturnProducts = document.getElementById("mst-return-products");
+
+if(mstReturnProducts){
+	mstReturnProducts.addEventListener('click', () => {
+		
+		let data = [];
+		
+		let params = (new URL(document.location)).searchParams; 
+		let ids = params.get("products")
+		
+		let isErr = false;
+		
+		if(params){
+			let idsArr = ids.split(",");
+			
+			for(let i = 0; i < idsArr.length; i++){
+				let productInfo = {}
+				//Причина возврата
+				const reason = document.querySelectorAll(`input[name="reason-${idsArr[i]}"]`)
+				for (const r of reason) {
+				  if (r.checked) {
+					productInfo['reason'] = r.value
+				  }
+				}
+				
+				if(!productInfo['reason']){
+					let errReason = document.querySelector(`.kenost-err-reason-${idsArr[i]}`);
+					if(errReason){
+						errReason.innerText = "Пожалуйста, укажите причину возврата";
+						isErr = true;
+					}else{
+						errReason.innerText = "";
+					}
+					//return alert("Пожалуйста, укажите причину возврата");
+				}
+				
+				//Требование
+				const requirement = document.querySelectorAll(`input[name="requirement-${idsArr[i]}"]`)
+				for (const r of requirement) {
+				  if (r.checked) {
+					productInfo['requirement'] = r.value
+				  }
+				}
+				
+				if(!productInfo['requirement']){
+					let errRequirement = document.querySelector(`.kenost-err-requirement-${idsArr[i]}`);
+					if(errRequirement){
+						errRequirement.innerText = "Пожалуйста, укажите требование"
+						isErr = true;
+					}else{
+						errRequirement.innerText = "";
+					}
+					//return alert("Пожалуйста, укажите требование");
+				}
+				
+				//Комментарии
+				const comment = document.querySelector(`textarea[name="comment-${idsArr[i]}"]`);
+				productInfo['comment'] = comment.value
+				
+				//id товара
+				
+				
+				const idProductEl = document.querySelector(`.id-product-return-${idsArr[i]}`);
+				if(idProductEl){
+					const idProduct = idProductEl.dataset.idProduct;
+					productInfo['id_product'] = idProduct;
+				}
+				
+				
+				const files = document.querySelectorAll(`.kenost-dropzone-${idsArr[i]} input.media-ids`);
+				
+				if(files.length == 0){
+					let errFile = document.querySelector(`.kenost-err-file-${idsArr[i]}`);
+					if(errFile){
+						errFile.innerText = "Пожалуйста, прикрепите хотя-бы 1 фото или видео"
+						isErr = true;
+					}else{
+						errFile.innerText = "";
+					}
+					//return alert("Пожалуйста, прикрепите хотя-бы 1 фото или видео");
+				}
+				
+				let file = []
+				
+				for(let j = 0; j < files.length; j++){
+					file.push(files[j].value);
+				}
+				
+				productInfo['files'] = file;
+				
+				
+				data.push(productInfo)
+			}
+		}
+	
+		
+		const full_name = document.querySelector('input[name="full_name"]')
+		const bank_name = document.querySelector('input[name="bank_name"]')
+		const bank_bik = document.querySelector('input[name="bank_bik"]')
+		const corr_account = document.querySelector('input[name="corr_account"]')
+		const pay_account = document.querySelector('input[name="pay_account"]')
+		const order_id = document.querySelector('input[name="order_id"]')
+		
+		if(full_name.value == ""){
+			document.querySelector('.kenost-err-full_name').innerText = "Пожалуйста, заполните ФИО"
+			isErr = true;
+		}else{
+			document.querySelector('.kenost-err-full_name').innerText = ""
+		}
+		
+		if(bank_name.value == ""){
+			document.querySelector('.kenost-err-bank_name').innerText = "Пожалуйста, заполните наименование банка"
+			isErr = true;
+		}else{
+			document.querySelector('.kenost-err-bank_name').innerText = ""
+		}
+		
+		if(bank_bik.value == ""){
+			document.querySelector('.kenost-err-bank_bik').innerText = "Пожалуйста, заполните БИК банка"
+			isErr = true;
+		}else{
+			document.querySelector('.kenost-err-bank_bik').innerText = ""
+		}
+		
+		if(corr_account.value == ""){
+			document.querySelector('.kenost-err-corr_account').innerText = "Пожалуйста, заполните корреспондентский счет"
+			isErr = true;
+		}else{
+			document.querySelector('.kenost-err-corr_account').innerText = ""
+		}
+		
+		if(pay_account.value == ""){
+			document.querySelector('.kenost-err-pay_account').innerText = "Пожалуйста, заполните расчетный счет"
+			isErr = true;
+		}else{
+			document.querySelector('.kenost-err-pay_account').innerText = ""
+		}
+		
+		
+		
+		if(isErr){
+			return null
+		}
+		
+		let info = {
+			full_name: full_name.value,
+			bank_name: bank_name.value,
+			bank_bik: bank_bik.value,
+			corr_account: corr_account.value,
+			pay_account: pay_account.value,
+			order_id: order_id.value
+		}
+		
+		
+		$.ajax({
+			url: shoplogisticConfig['actionUrl'],         /* Куда отправить запрос */
+			method: 'post',             /* Метод запроса (post или get) */
+			dataType: 'json',          /* Тип данных в ответе (xml, json, script, html). */
+			data: {sl_action: 'product/return', data: data, info: info},     /* Данные передаваемые в массиве */
+			success: function(data){   /* функция которая будет выполнена после успешного запроса.  */
+				if(data.success){
+					window.location.href = "https://mst.tools/profile/vozvrat-oformlen.html"
+				}
+			}
+		});
+	})
+}
+
+const all_bonuses = document.getElementById('all-bonuses');
+const all_bonuses_btn = document.querySelector('.bonus-history-all')
+const profile_bonuses_container = document.querySelector('.profile-bonus-container-info__months')
+
+if(all_bonuses && profile_bonuses_container){
+	all_bonuses.addEventListener('click', () => {
+		profile_bonuses_container.classList.add('all')
+		all_bonuses_btn.classList.add('hidden')
+	})
+}
+
+const all_history = document.querySelectorAll('.profile-bonus-card');
+const bonus_filter_btn = document.querySelectorAll('input[type="radio"][name="bonus-filter"]')
+const profile_bonus_container = document.querySelectorAll('.profile-bonus-container-info__month');
+
+if(all_history && bonus_filter_btn && profile_bonus_container){
+	bonus_filter_btn.forEach(radio => {
+		radio.addEventListener('change', () => {
+			if(radio.value == '1'){
+				for(let i = 0; i < all_history.length; i++){
+					all_history[i].classList.remove('hidden');
+				}
+			}else if(radio.value == '2'){
+				for(let i = 0; i < all_history.length; i++){
+					all_history[i].classList.add('hidden');
+
+					if(all_history[i].classList.contains('plus')){
+						all_history[i].classList.remove('hidden');
+					}
+				}
+			}else if(radio.value == '3'){
+				for(let i = 0; i < all_history.length; i++){
+					all_history[i].classList.add('hidden');
+					if(all_history[i].classList.contains('minus')){
+						all_history[i].classList.remove('hidden');
+					}
+				}
+			}
+
+			for(let i = 0; i < profile_bonus_container.length; i++){
+				const elems = profile_bonus_container[i].querySelectorAll('.profile-bonus-card');
+				isHiddenAll = true;
+				if(elems){
+					for(let j = 0; j < elems.length; j++){
+						if(!elems[j].classList.contains('hidden')){
+							isHiddenAll = false;
+						}
+					}
+				}
+
+				if(isHiddenAll){
+					profile_bonus_container[i].classList.add('hidden')
+				}else{
+					profile_bonus_container[i].classList.remove('hidden')
+				}
+			}
+		});
+	});
+}
+
+const debitingBonus = document.getElementById('debiting-bonus');
+
+if(debitingBonus){
+	debitingBonus.addEventListener('change', () => {
+		debitingBonus.value = debitingBonus.checked
+	})
+}
+
+// if (el.style.maxHeight) {
+// 	el.style.maxHeight = null;
+// } else {
+// 	el.style.maxHeight =  el.scrollHeight + "px";
+// }
+
+const blockTextInfo = document.querySelectorAll('.block-text-info');
+if(blockTextInfo){
+	for(let i = 0; i < blockTextInfo.length; i++){
+		if(blockTextInfo[i].scrollHeight > 333){
+			blockTextInfo[i].classList.add("block-text-info__button");
+		}
+	}
+}
+
+const blockTextInfoMore = document.querySelectorAll('.block-text-info__more');
+
+if(blockTextInfoMore){
+	for(let i = 0; i < blockTextInfoMore.length; i++){
+		blockTextInfoMore[i].addEventListener('click', () => {
+			if (blockTextInfoMore[i].parentNode.parentNode.style.maxHeight != '333px') {
+				blockTextInfoMore[i].parentNode.parentNode.style.maxHeight = '333px';
+				blockTextInfoMore[i].innerText = "Читать далее"
+				blockTextInfoMore[i].parentNode.parentNode.classList.remove('show')
+			} else {
+				blockTextInfoMore[i].parentNode.parentNode.style.maxHeight =  blockTextInfoMore[i].parentNode.parentNode.scrollHeight + 60 + "px";
+				blockTextInfoMore[i].innerText = "Скрыть"
+				blockTextInfoMore[i].parentNode.parentNode.classList.add('show')
+			}
 		})
 	}
 }

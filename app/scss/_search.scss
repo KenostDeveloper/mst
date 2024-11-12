@@ -48,7 +48,43 @@
 .dartSwiperSearch{
     // margin-bottom: 50px;
 
+    &__pagetitle{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 18px !important;
+        color: var(--secondary-color) !important;
+        height: 54px;
+    }
 
+    &__info{
+        a:hover{
+           .dartSwiperSearch__pagetitle-full{
+                opacity: 1;
+                pointer-events: all;
+                transition: all 0.4s;
+           } 
+        }
+    }
+
+    &__pagetitle-full{
+        line-height: 18px !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        color: var(--secondary-color) !important;
+        position: absolute;
+        top: 0;
+        background: var(--white-color);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        padding-bottom: 6px;
+    }
 
     &__text{
         padding: 12px;
@@ -60,16 +96,6 @@
         .dart-rating{
             margin-top: 8px;
             margin-bottom: 30px;
-        }
-
-        a{
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-decoration: none;
-            line-height: 18px;
         }
     }
 
@@ -113,6 +139,8 @@
     &__info{
         a{
             height: 54px;
+            position: relative;
+            text-decoration: none;
         }
     }
 
@@ -123,7 +151,7 @@
         line-height: 16px;
         color: var(--secondary-color);
         margin-bottom: 16px;
-        height: 16px;
+        height: 35px;
     }
 
     &__buttons{
@@ -339,9 +367,9 @@
 // dart-link-all
 
 @media (max-width: $big-phones){
-    .dart-link-all{
-        display: none;
-    }
+    // .dart-link-all{
+    //     display: none;
+    // }
 
     .mini-info-shop{
         &__image{

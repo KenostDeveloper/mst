@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        @@include('./includes/meta.html')
+    </head>
+
+    <body>
+        <div class="dart_wrapper">
+            @@include('./includes/header.html')
+            @@include('./includes/modal.html')
+            <main class="dart_main">
+                <section class="dart-section dart-overflov-unset mptm-0">
+                    <div class="dart_container mpm-0">
+                        <div class="dart-custom-grid grid-center custom-grid-profile">
+                            @@include('./includes/profileMenu.html')
+                            <div class="d-col-profile">
+                                <div class="profile-title">
+                                  <a href="#" class="link-no-style profile-title__return"><i class="d_icon d_icon-left-arrow"></i></a>
+                                  <h1 class="h1-mini">Мои бонусы</h1>
+                                </div>
+                                <div class="profile-bonus-container">
+                                    <div class="profile-bonus-container-info">
+                                        <span class="h3">Баланс</span>
+                                        <div class="profile-bonus-container__balance">
+                                            <img class="profile-bonus-container__image" src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                            <div class="profile-bonus-container__balance-text">
+                                                <b>1 000 000</b>
+                                                <p>бонусов на вашем счету</p>
+                                            </div>
+                                        </div>
+                                        <div class="profile-bonus-container__puncts mt-2">
+                                            <div class="profile-bonus-container__punct">
+                                                <img src="../img/icons/mstore.png" alt="">
+                                                <p>Покупая в одном из наших магазинов-партнеров офлайн, вы получаете 1% 
+                                                    от суммы покупки бонусами. При покупке на сайте - 2% от суммы товара бонусами</p>
+                                            </div>
+                                            <div class="profile-bonus-container__punct">
+                                                <img src="../img/icons/mphone.png" alt="">
+                                                <p>Для начисления бонусов вам нужно предоставить номер телефона</p>
+                                            </div>
+                                            <div class="profile-bonus-container__punct">
+                                                <img src="../img/icons/mbag.png" alt="">
+                                                <p>Вы может полностью или частично  оплачивать бонусами покупки на сайте MachineStore, если товар помечен значком <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-bonus-container-info">
+                                        <span class="h3">История</span>
+                                        <div class="mb-3">
+                                            <a class="dart-btn dart-btn-radio-mini">
+                                                <input checked type="radio" id="bonus-filter-1" name="bonus-filter" value='1'>
+                                                <label for="bonus-filter-1" class="text">Все</label>
+                                            </a>
+                                            <a class="dart-btn dart-btn-radio-mini">
+                                                <input type="radio" id="bonus-filter-2" name="bonus-filter" value='2'>
+                                                <label for="bonus-filter-2" class="text">Начисление</label>
+                                            </a>
+                                            <a class="dart-btn dart-btn-radio-mini">
+                                                <input type="radio" id="bonus-filter-3" name="bonus-filter" value='3'>
+                                                <label for="bonus-filter-3" class="text">Списание</label>
+                                            </a>
+                                        </div>
+
+                                        <div class="profile-bonus-container-info__months">
+                                            <div class="profile-bonus-container-info__month">
+                                                <div class="h4 mb-2">Май</div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в АБК-Инструмент Покупка в АБК-Инструмент</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+1 000</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-5 000</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card minus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card plus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card plus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card minus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card plus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card plus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-bonus-card plus">
+                                                    <p class="profile-bonus-card__place">На сайте</p>
+                                                    <div class="profile-bonus-card-el">
+                                                        <img class="profile-bonus-card-el__image" src="https://dev.mst.tools/assets/content/images/shops_logo/mstoldlogo.png" alt="">
+                                                        <div class="profile-bonus-card-el__text">
+                                                            <div class="profile-bonus-card-el__top">
+                                                                <b>Покупка в MachineStore</b>
+                                                                <div class="profile-bonus-card-el__bonus"><p>+100</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt=""></div>
+                                                            </div>
+                                                            <div class="profile-bonus-card-el__bottom">
+                                                                <div class="profile-bonus-card-el__bottom-info">
+                                                                    <p>10 291 ₽</p>
+                                                                    <span>20 мая 2024</span>
+                                                                </div>
+                                                                <div class="profile-bonus-card-el__bonus-minus">
+                                                                    <p>-50</p> <img src="https://dev.mst.tools/assets/templates/img/icons/bonus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bonus-history-all">
+                                                <a id="all-bonuses" class="dart-btn dart-btn-secondary-outline">Показать еще</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./includes/footer.html')
+        </div>
+        @@include('./includes/scripts.html')
+    </body>
+</html>
